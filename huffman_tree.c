@@ -10,6 +10,18 @@ typedef struct {
 
 typedef HTNode HuffmanTree[m];
 
+void InitHuffmanTree(HuffmanTree T)
+{
+}
+
+void InputWeight(HuffmanTree T)
+{
+}
+
+void SelectMin(HuffmanTree T, int k, int *p1, int *p2)
+{
+}
+
 void CreateHuffmanTree(HuffmanTree T)
 {
 	//Construct the huffman tree
@@ -41,4 +53,5 @@ void CharSetHuffmanEncoding(HuffmanTree T, HuffmanCode H)
  */
  void main(void)
 {
+	printf("Hello world:\r\n");
 }
