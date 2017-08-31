@@ -22,15 +22,15 @@ void CreateBinTree(BinTree *T)
 }
 
 typedef enum {Link, Thread} PointerTag;
-typedef struct node {
+typedef struct Thrnode {
 	DataType data;
 	PointerTag ltag, rtag;
-	struct node * lchild, *rchild;
+	struct Thrnode * lchild, *rchild;
 } BinThrNode;
 typedef BinThrNode *BinThrTree;
 BinThrNode *pre = NULL;
 
-void InorderThreading(BinTree p)
+void InorderThreading(BinThrTree p)
 {
 	if (p) {
 		InorderThreading(p->lchild);
@@ -47,7 +47,7 @@ void InorderThreading(BinTree p)
 	}
 }
 
-void InorderSuccessor(BinThrNode *p)
+BinThrNode* InorderSuccessor(BinThrNode *p)
 {
 	BinThrNode *q;
 
@@ -96,5 +96,6 @@ CTree T;
 
 int main(void)
 {
+	return 0;
 }
 
