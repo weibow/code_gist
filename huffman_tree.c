@@ -35,3 +35,10 @@ typedef CodeNode HuffmanCode[n];
 void CharSetHuffmanEncoding(HuffmanTree T, HuffmanCode H)
 {
 }
+
+/*
+ * The main functions
+ */
+ void main(void)
+{
+}
