@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define n 100
-#define m 2*n-1
+#define n 	100
+#define m 	2 * n - 1
 
 typedef struct {
 	float weight;
@@ -25,6 +25,7 @@ void SelectMin(HuffmanTree T, int k, int *p1, int *p2)
 void CreateHuffmanTree(HuffmanTree T)
 {
 	//Construct the huffman tree
+	
 	int i, p1, p2;
 	InitHuffmanTree(T);
 	InputWeight(T);
@@ -47,6 +48,7 @@ typedef CodeNode HuffmanCode[n];
 void CharSetHuffmanEncoding(HuffmanTree T, HuffmanCode H)
 {
 }
+
 
 /*
  * The main functions
